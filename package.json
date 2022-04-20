@@ -2,11 +2,12 @@
   "name": "@toriyama/masaba",
   "version": "0.0.1",
   "description": "ちょっと確認したいとき用サーバー(中身はfastify)",
-  "main": "dist/main.js",
+  "bin": "dist/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "esr src/main.ts",
-    "build": "tsc"
+    "build": "rm -rf ./dist && tsc",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",

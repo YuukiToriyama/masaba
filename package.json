@@ -1,0 +1,30 @@
+{
+  "name": "@toriyama/masaba",
+  "version": "0.0.1",
+  "description": "ちょっと確認したいとき用サーバー(中身はfastify)",
+  "main": "dist/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "esr src/main.ts",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YUUKIToriyama/masaba.git"
+  },
+  "author": "YUUKIToriyama <github@toriyama.dev>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YUUKIToriyama/masaba/issues"
+  },
+  "homepage": "https://github.com/YUUKIToriyama/masaba#readme",
+  "dependencies": {
+    "fastify": "^3.28.0",
+    "fastify-static": "^4.6.1"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.25",
+    "esbuild-runner": "^2.2.1",
+    "typescript": "^4.6.3"
+  }
+}

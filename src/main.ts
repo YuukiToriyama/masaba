@@ -1,8 +1,7 @@
 #!/usr/bin/env node
+import fastifyStatic, { ListOptionsHtmlFormat } from '@fastify/static';
 import fastify from 'fastify';
-import fastifyStatic from 'fastify-static';
 import path from 'path';
-import { Directory, File, FileListRenderer } from './utils';
 
 const ROOT_DIR = process.argv[2] || "./";
 const PORT = process.argv[3] || "8080";
@@ -11,9 +10,9 @@ const server = fastify({
 	logger: true
 });
 
-const customFileListRenderer: FileListRenderer = {
+const customFileListRenderer: ListOptionsHtmlFormat = {
 	format: "html",
-	render: (dirs: Directory[], files: File[]): string => {
+	render: (dirs, files) => {
 		const dirsList = dirs.map(dir => {
 			return `<li><a href="${dir.href}">${dir.name}</a></li>`;
 		}).join("");
@@ -30,7 +29,7 @@ server.register(fastifyStatic, {
 	list: customFileListRenderer
 });
 
-server.listen(PORT, (err, address) => {
+server.listen({ port: parseInt(PORT) }, (err, address) => {
 	if (err) {
 		throw err
 	}

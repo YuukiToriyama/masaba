@@ -20,8 +20,8 @@
   },
   "homepage": "https://github.com/YUUKIToriyama/masaba#readme",
   "dependencies": {
-    "fastify": "3.29.1",
-    "fastify-static": "4.7.0"
+    "@fastify/static": "6.5.0",
+    "fastify": "4.3.0"
   },
   "devDependencies": {
     "@types/node": "17.0.45",

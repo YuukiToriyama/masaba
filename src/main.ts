@@ -19,7 +19,7 @@ const customFileListRenderer: ListOptionsHtmlFormat = {
 		const filesList = files.map(file => {
 			return `<li><a href="${file.href}">${file.name}</a></li>`;
 		}).join("");
-		return `<html><body><h1>Directories</h1><ul>${dirsList}</ul><h1>Files</h1><ul>${filesList}</ul></body></html>`;
+		return `<html><head><meta charset="UTF-8"></head><body><h1>Directories</h1><ul>${dirsList}</ul><h1>Files</h1><ul>${filesList}</ul></body></html>`;
 	}
 };
 

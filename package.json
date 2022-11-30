@@ -1,6 +1,6 @@
 {
     "name": "@toriyama/masaba",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "ちょっと確認したいとき用サーバー(中身はfastify)",
     "bin": "dist/cli.js",
     "scripts": {

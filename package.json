@@ -10,14 +10,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/YUUKIToriyama/masaba.git"
+        "url": "git+https://github.com/YuukiToriyama/masaba.git"
     },
-    "author": "YUUKIToriyama <github@toriyama.dev>",
+    "author": "YuukiToriyama <github@toriyama.dev>",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/YUUKIToriyama/masaba/issues"
+        "url": "https://github.com/YuukiToriyama/masaba/issues"
     },
-    "homepage": "https://github.com/YUUKIToriyama/masaba#readme",
+    "homepage": "https://github.com/YuukiToriyama/masaba#readme",
     "dependencies": {
         "@fastify/static": "7.0.1",
         "fastify": "4.3.0",
